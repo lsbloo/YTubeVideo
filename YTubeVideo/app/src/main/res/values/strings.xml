@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YTubeVideo</string>
+
+    <!-- Login Screen -->
+    <string name="title_logo_app">YTubeVideo</string>
+    <string name="description_logo_app">YTubeVideoApp</string>
+    <string name="login_label_username">Email ou número de celular</string>
+    <string name="login_label_password">Senha</string>
+    <string name="login_label_button_enter">Entrar</string>
+    <string name="login_label_your_need_help">Precisa de ajuda?</string>
+    <string name="login_label_singup_now">Novo por aqui? Inscreva-se agora.</string>
+
+
+</resources>

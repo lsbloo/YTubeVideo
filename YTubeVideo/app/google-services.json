@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "647041097483",
+    "project_id": "ytubevideo-6d4a9",
+    "storage_bucket": "ytubevideo-6d4a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647041097483:android:74f4a04dc46a9d30854c0e",
+        "android_client_info": {
+          "package_name": "com.htk.ytubevideo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANynbQ6GDiBDV-E536AmThay5Z2ZBDeys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
