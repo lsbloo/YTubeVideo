@@ -15,14 +15,14 @@ class SplashViewModel(
     private val splashScreenRotateUseCase: SplashScreenRotateUseCase
 ) : ActionViewModel<SplashScreenAction>(routerNavigation) {
 
-    var mutablateStateOffset = mutableFloatStateOf(0f)
+    var mutableStateOffset = mutableFloatStateOf(0f)
 
     fun rotateSplashPlayerAnimated() {
         viewModelScope
             .launchScopedFun(
                 data = splashScreenRotateUseCase.getEmitterStatesSplashPlayer(),
                 onCollect = {
-                    mutablateStateOffset.value = it
+                    mutableStateOffset.value = it
                 },
                 onCompletion = {
                     Handler().postDelayed({

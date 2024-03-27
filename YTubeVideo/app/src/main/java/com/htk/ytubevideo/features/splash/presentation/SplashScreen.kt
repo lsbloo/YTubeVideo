@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -24,7 +23,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.htk.ytubevideo.core.base.onViewModelAction
-import com.htk.ytubevideo.core.extensions.onAction
 import org.koin.androidx.compose.koinViewModel
 
 
@@ -73,7 +71,7 @@ internal fun BodySplashScreen(splashViewModel: SplashViewModel) {
                 }
                 val rect = Rect(Offset.Zero, size)
                 drawCircle(color = Color.Black)
-                rotate(degrees = splashViewModel.mutablateStateOffset.value, rect.center) {
+                rotate(degrees = splashViewModel.mutableStateOffset.value, rect.center) {
                     drawPath(
                         path = trianglePath,
                         Brush.verticalGradient(colors = colors),

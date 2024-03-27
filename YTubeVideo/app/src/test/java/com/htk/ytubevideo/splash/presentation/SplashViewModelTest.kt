@@ -34,7 +34,7 @@ class SplashViewModelTest : BaseTest() {
         verify {
             splashViewModel?.rotateSplashPlayerAnimated()
         }
-        assertEquals(0f, splashViewModel?.mutablateStateOffset?.value)
+        assertEquals(0f, splashViewModel?.mutableStateOffset?.value)
     }
 
     @Test
